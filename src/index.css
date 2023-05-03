@@ -3,3 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Navbar */
+
+.navbar-container {
+  display: flex;
+}
+
+.hamburger-btn {
+  display: block;
+  z-index: 1;
+}
+
+.hamburger-btn:hover {
+  cursor: pointer;
+}
+
+.hamburger-line {
+  display: block;
+  width: 20px;
+  height: 1.5px;
+  margin: 5px auto;
+  background-color: black;
+}
