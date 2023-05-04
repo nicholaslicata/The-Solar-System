@@ -1,4 +1,5 @@
 import { HashRouter, Route, Routes } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 // Components
 import Navbar from './components/Navbar';
@@ -16,9 +17,27 @@ import Neptune from './pages/Neptune';
 import PageNotFound from './pages/PageNotFound';
 
 function App() {
+  const [navActive, setNavActive] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('resize', function() {
+      if (window.innerWidth > 768 && navActive) {
+        closeNav();
+      }
+    })
+  });
+
+  function toggleNav() {
+    setNavActive(!navActive);
+  }
+  
+  function closeNav() {
+    setNavActive(false);
+  }
+
   return (
     <HashRouter>
-      <Navbar />
+      <Navbar toggleNav={toggleNav} navActive={navActive} closeNav={closeNav} />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/mercury' element={<Mercury />} />
