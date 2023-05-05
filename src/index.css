@@ -1,13 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Barlow Condensed';
 }
 
 html, body {
   height: 100%;
   overflow-x: hidden;
   background: url(assets/space-bg.jpg);
+  background-position: center;
 }
 
 /* Navbar */
@@ -17,7 +21,7 @@ html, body {
   justify-content: space-between;
   align-items: center;
   padding: 1em 1em;
-  border: 1px solid red;
+  border-bottom: 2px solid white;
 }
 
 .nav {
@@ -47,16 +51,27 @@ html, body {
   right: 0;
   padding: 1em 0;
   transition: 0.5s ease-in;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 
 .nav-link {
   font-size: 1.2rem;
   text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav-link:hover {
+  /* border-top: 1px solid white; */
+  color: rgb(143, 143, 143);
 }
 
 .logo {
   font-size: 1.4rem;
   text-decoration: none;
+  text-transform: uppercase;
+  color: white;
 }
 
 .hamburger-btn {
@@ -73,7 +88,7 @@ html, body {
   width: 20px;
   height: 2.5px;
   margin: 5px auto;
-  background-color: black;
+  background-color: white;
 }
 
 /* Media Queries */
