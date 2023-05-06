@@ -5,7 +5,7 @@ function Home() {
        <main className='home-container'>
         <div className='home-text-container'>
             <img className='sun-img' src={require('../assets/the-sun.png')} alt='The Sun'/>
-            <div className>
+            <div className='home-text-content'>
               <h1 className='home-h1'>Our Solar System</h1>
               <p className='home-p'>The Solar System is the gravitationally bound system of the Sun
                 and the objects that orbit it. It was formed 4.6 billion years ago
