@@ -10,7 +10,7 @@
 html, body {
   height: 100%;
   overflow-x: hidden;
-  background: url(assets/space-bg.jpg);
+  background: url(assets/space-bg.jpg) no-repeat;
   background-position: center;
 }
 
@@ -63,7 +63,6 @@ html, body {
 }
 
 .nav-link:hover {
-  /* border-top: 1px solid white; */
   color: rgb(143, 143, 143);
 }
 
@@ -89,6 +88,75 @@ html, body {
   height: 2.5px;
   margin: 5px auto;
   background-color: white;
+}
+
+/* Home Page */
+
+.sun-img {
+  width: 300px;
+}
+
+.home-container {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 2em;
+  border: 4px solid purple;
+}
+
+.home-text-container {
+  min-width: 80%;
+  text-align: center;
+  padding: 1em 1em;
+  color: white;
+}
+
+.home-h1 {
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.2em;
+}
+
+.home-p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+}
+
+.home-facts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  min-width: 80%;
+  padding: 1em 0;
+}
+
+.home-fact {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  border: 1px solid white;
+}
+
+.home-fact-text {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  min-width: 40%;
+  text-align: center;
+  color: rgb(143, 143, 143);
+}
+
+.home-fact-number {
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  min-width: 40%;
+  text-align: center;
+  color: white;
 }
 
 /* Media Queries */
