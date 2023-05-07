@@ -125,6 +125,8 @@ html, body {
 .sun-img {
   width: 100%;
   max-width: 350px;
+  /* object-fit: cover; */
+  align-self: stretch;
   margin: 0 auto;
 }
 
@@ -177,6 +179,94 @@ html, body {
   color: white;
 }
 
+/* Planets Pages */
+
+.planet-container {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 2em;
+  padding: 1em 0 2em 0;
+  color: white;
+}
+
+.planet-text-container {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.planet-text-content {
+  width: 90%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.planet-img {
+  width: 60%;
+  max-width: 250px;
+  align-self: stretch;
+  margin: 0 auto;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.planet-h1 {
+  font-size: 2.6rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+.planet-p {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+.planet-facts-container {
+  width: 90%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin: 0 auto;
+  padding: 1em 0;
+}
+
+.planet-fact {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 0.5em 0;
+  border: 2px solid white;
+}
+
+.planet-fact-text {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  min-width: 40%;
+  text-align: center;
+  color: rgb(143, 143, 143);
+}
+
+.planet-fact-number {
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  min-width: 40%;
+  text-align: center;
+  color: white;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
@@ -211,6 +301,7 @@ html, body {
 
   .sun-img {
     height: 300px;
+    object-fit: cover;
   }
 
   .home-h1 {
@@ -236,6 +327,42 @@ html, body {
   .home-fact-number {
     font-size: 1.2rem;
   }
+
+  /* Planet Page */
+  .planet-text-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 3em;
+  }
+
+  /* .planet-img {
+   
+  } */
+
+  .planet-h1 {
+    font-size: 3rem;
+  }
+
+  .planet-p {
+    font-size: 1.2rem;
+  }
+
+  .planet-facts-container {
+    flex-direction: row;
+  }
+
+  .planet-fact {
+    flex-direction: column;
+  }
+
+  .planet-fact-text {
+    font-size: 1.2rem;
+  }
+
+  .planet-fact-number {
+    font-size: 1.2rem;
+  }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -262,6 +389,7 @@ html, body {
   /* Home Page */
   .sun-img {
     height: 400px;
+    object-fit: cover;
   }
 
   .home-h1 {
@@ -271,4 +399,18 @@ html, body {
   .home-p {
     font-size: 1.4rem;
   }
+
+  /* Planet Page */
+  /* .planet-img {
+
+  } */
+
+  .planet-h1 {
+    font-size: 4.4rem;
+  }
+
+  .planet-p {
+    font-size: 1.4rem;
+  }
+
 }
