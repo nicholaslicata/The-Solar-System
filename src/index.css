@@ -103,14 +103,14 @@ html, body {
 }
 
 .home-text-container {
-  width: 95%;
+  width: 90%;
   max-width: 1000px;
+  /* max-height: 300px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
   margin: 0 auto;
-  padding: 1em 1em;
   color: white;
 }
 
@@ -124,8 +124,8 @@ html, body {
 
 .sun-img {
   width: 100%;
-  max-width: 350px;
-  /* object-fit: cover; */
+  max-width: 300px;
+  max-height: 300px;
   align-self: stretch;
   margin: 0 auto;
 }
@@ -330,14 +330,11 @@ html, body {
 
   /* Planet Page */
   .planet-text-container {
+    max-height: 300px;
     flex-direction: row;
     align-items: center;
     gap: 3em;
   }
-
-  /* .planet-img {
-   
-  } */
 
   .planet-h1 {
     font-size: 3rem;
@@ -401,9 +398,6 @@ html, body {
   }
 
   /* Planet Page */
-  /* .planet-img {
-
-  } */
 
   .planet-h1 {
     font-size: 4.4rem;
