@@ -18,6 +18,10 @@ import PageNotFound from './pages/PageNotFound';
 
 function App() {
   const [navActive, setNavActive] = useState(false);
+  const [overview,setOverview] = useState(true);
+  const [surface, setSurface] = useState(false);
+  const [atmosphere, setAtmosphere] = useState(false);
+  const [orbit, setOrbit] = useState(false);
 
   useEffect(() => {
     window.addEventListener('resize', function() {
@@ -35,12 +39,40 @@ function App() {
     setNavActive(false);
   }
 
+  function handleOverview() {
+    setOverview(true);
+    setSurface(false);
+    setAtmosphere(false);
+    setOrbit(false);
+  }
+
+  function handleSurface() {
+    setSurface(true);
+    setOverview(false);
+    setAtmosphere(false);
+    setOrbit(false);
+  }
+
+  function handleAtmosphere() {
+    setAtmosphere(true);
+    setOverview(false);
+    setSurface(false);
+    setOrbit(false);
+  }
+
+  function handleOrbit() {
+    setOrbit(true);
+    setOverview(false);
+    setSurface(false);
+    setAtmosphere(false);
+  } 
+
   return (
     <HashRouter>
       <Navbar toggleNav={toggleNav} navActive={navActive} closeNav={closeNav} />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/mercury' element={<Mercury />} />
+        <Route path='/mercury' element={<Mercury overview={overview} handleOverview={handleOverview} surface={surface} handleSurface={handleSurface} atmosphere={atmosphere} handleAtmosphere={handleAtmosphere} orbit={orbit} handleOrbit={handleOrbit} />} />
         <Route path='venus' element={<Venus />} />
         <Route path='earth' element={<Earth />} />
         <Route path='Mars' element={<Mars />} />
