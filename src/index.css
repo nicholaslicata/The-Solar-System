@@ -91,6 +91,45 @@ html, body {
   background-color: white;
 }
 
+/* Buttons */
+
+.buttons-container {
+ /* border: 1px solid red; */
+ width: 90%;
+ max-width: 1000px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ margin: 0 auto;
+ padding: 1em 0;
+}
+
+.planet-button {
+  /* width: 20%; */
+  padding: 0.5em;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: white;
+  background: none;
+  border: none;
+}
+
+.planet-button-active {
+  /* width: 20%; */
+  padding: 0.5em;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: rgb(143, 143, 143);
+  background: none;
+  border: 2px solid white;
+}
+
+.planet-button:hover {
+  cursor: pointer;
+}
+
 /* Home Page */
 .home-container {
   min-height: 90vh;
@@ -105,7 +144,6 @@ html, body {
 .home-text-container {
   width: 90%;
   max-width: 1000px;
-  /* max-height: 300px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -290,6 +328,19 @@ html, body {
 
   .hamburger-btn {
     display: none;
+  }
+
+  /* Buttons */
+  .planet-button {
+    min-width: 20%;
+    font-size: 1.6rem;
+    padding: 0.5em 2em;
+  }
+
+  .planet-button-active {
+    min-width: 20%;
+    font-size: 1.6rem;
+    padding: 0.5em 2rem;
   }
 
   /* Home Page */
