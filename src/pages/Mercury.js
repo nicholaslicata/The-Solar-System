@@ -1,6 +1,15 @@
+import { useEffect } from 'react';
 import Buttons from '../components/Buttons';
 
-function Mercury({overview, handleOverview, surface, handleSurface, atmosphere, handleAtmosphere, orbit, handleOrbit}) {
+
+function Mercury({overview, setOverview, handleOverview, surface, setSurface, handleSurface, atmosphere, setAtmosphere, handleAtmosphere, orbit, setOrbit, handleOrbit}) {
+    useEffect(() => {
+        setOverview(true);
+        setSurface(false);
+        setAtmosphere(false);
+        setOrbit(false);
+    }, [])
+
     return (
         <main className='planet-container'>   
             <Buttons overview={overview} handleOverview={handleOverview} surface={surface} handleSurface={handleSurface} atmosphere={atmosphere} handleAtmosphere={handleAtmosphere} orbit={orbit} handleOrbit={handleOrbit}/>
