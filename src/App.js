@@ -72,8 +72,8 @@ function App() {
       <Navbar toggleNav={toggleNav} navActive={navActive} closeNav={closeNav} />
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/mercury' element={<Mercury overview={overview} handleOverview={handleOverview} surface={surface} handleSurface={handleSurface} atmosphere={atmosphere} handleAtmosphere={handleAtmosphere} orbit={orbit} handleOrbit={handleOrbit} />} />
-        <Route path='venus' element={<Venus />} />
+        <Route path='mercury' element={<Mercury overview={overview} setOverview={setOverview} handleOverview={handleOverview} surface={surface} setSurface={setSurface} handleSurface={handleSurface} atmosphere={atmosphere} setAtmosphere={setAtmosphere} handleAtmosphere={handleAtmosphere} orbit={orbit} setOrbit={setOrbit} handleOrbit={handleOrbit} />} />
+        <Route path='venus' element={<Venus overview={overview} setOverview={setOverview} handleOverview={handleOverview} surface={surface} setSurface={setSurface} handleSurface={handleSurface} atmosphere={atmosphere} setAtmosphere={setAtmosphere} handleAtmosphere={handleAtmosphere} orbit={orbit} setOrbit={setOrbit} handleOrbit={handleOrbit} />} />
         <Route path='earth' element={<Earth />} />
         <Route path='Mars' element={<Mars />} />
         <Route path='jupiter' element={<Jupiter />} />
