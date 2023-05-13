@@ -75,7 +75,7 @@ function App() {
         <Route path='mercury' element={<Mercury overview={overview} setOverview={setOverview} handleOverview={handleOverview} surface={surface} setSurface={setSurface} handleSurface={handleSurface} atmosphere={atmosphere} setAtmosphere={setAtmosphere} handleAtmosphere={handleAtmosphere} orbit={orbit} setOrbit={setOrbit} handleOrbit={handleOrbit} />} />
         <Route path='venus' element={<Venus overview={overview} setOverview={setOverview} handleOverview={handleOverview} surface={surface} setSurface={setSurface} handleSurface={handleSurface} atmosphere={atmosphere} setAtmosphere={setAtmosphere} handleAtmosphere={handleAtmosphere} orbit={orbit} setOrbit={setOrbit} handleOrbit={handleOrbit} />} />
         <Route path='earth' element={<Earth overview={overview} setOverview={setOverview} handleOverview={handleOverview} surface={surface} setSurface={setSurface} handleSurface={handleSurface} atmosphere={atmosphere} setAtmosphere={setAtmosphere} handleAtmosphere={handleAtmosphere} orbit={orbit} setOrbit={setOrbit} handleOrbit={handleOrbit} />} />
-        <Route path='Mars' element={<Mars />} />
+        <Route path='Mars' element={<Mars overview={overview} setOverview={setOverview} handleOverview={handleOverview} surface={surface} setSurface={setSurface} handleSurface={handleSurface} atmosphere={atmosphere} setAtmosphere={setAtmosphere} handleAtmosphere={handleAtmosphere} orbit={orbit} setOrbit={setOrbit} handleOrbit={handleOrbit} />} />
         <Route path='jupiter' element={<Jupiter />} />
         <Route path ='saturn' element={<Saturn />} />
         <Route path='uranus' element={<Uranus />} />
