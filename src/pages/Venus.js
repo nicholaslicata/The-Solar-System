@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import Buttons from '../components/Buttons';
 
-function Venus({ overview, setOverview, handleOverview, surface, setSurface, handleSurface, atmosphere, setAtmosphere, handleAtmosphere, orbit, setOrbit, handleOrbit}) {
+function Venus({ overview, setOverview, handleOverview, surface, setSurface, handleSurface, atmosphere, setAtmosphere, handleAtmosphere, orbit, setOrbit, handleOrbit }) {
     useEffect(() => {
         setOverview(true);
         setSurface(false);
