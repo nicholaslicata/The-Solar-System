@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import Buttons from '../components/Buttons';
 
 
-function Mercury({overview, setOverview, handleOverview, surface, setSurface, handleSurface, atmosphere, setAtmosphere, handleAtmosphere, orbit, setOrbit, handleOrbit}) {
+function Mercury({ overview, setOverview, handleOverview, surface, setSurface, handleSurface, atmosphere, setAtmosphere, handleAtmosphere, orbit, setOrbit, handleOrbit }) {
     useEffect(() => {
         setOverview(true);
         setSurface(false);
