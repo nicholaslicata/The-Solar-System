@@ -15,6 +15,13 @@ html, body {
   background-position: center;
 }
 
+/* Page Not Found */
+
+.page-not-found {
+  margin-top: 1em;
+  color: white;
+}
+
 /* Navbar */
 
 .navbar-container {
